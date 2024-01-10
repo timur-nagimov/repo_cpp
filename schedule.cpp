@@ -14,6 +14,7 @@
 #include <QComboBox>
 #include <QMessageBox>
 
+
 class ValidatingComboBoxDelegate : public QItemDelegate {
 public:
     ValidatingComboBoxDelegate(const QStringList &items, QObject *parent = 0)
