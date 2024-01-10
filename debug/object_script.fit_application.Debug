@@ -1,0 +1,10 @@
+debug/calendaractivity.o
+debug/main.o
+debug/mainwindow.o
+debug/schedule.o
+debug/sets.o
+debug/qrc_design.o
+debug/moc_calendaractivity.o
+debug/moc_mainwindow.o
+debug/moc_schedule.o
+debug/moc_sets.o

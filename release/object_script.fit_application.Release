@@ -1,0 +1,10 @@
+release/calendaractivity.o
+release/main.o
+release/mainwindow.o
+release/schedule.o
+release/sets.o
+release/qrc_design.o
+release/moc_calendaractivity.o
+release/moc_mainwindow.o
+release/moc_schedule.o
+release/moc_sets.o
