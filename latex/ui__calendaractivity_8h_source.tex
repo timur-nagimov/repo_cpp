@@ -1,0 +1,130 @@
+\doxysection{ui\+\_\+calendaractivity.\+h}
+\hypertarget{ui__calendaractivity_8h_source}{}\label{ui__calendaractivity_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'calendaractivity.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 6.6.0}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_CALENDARACTIVITY\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_CALENDARACTIVITY\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QCalendarWidget>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QDialog>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QGridLayout>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHeaderView>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTableView>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTableWidget>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QtWidgets/QVBoxLayout>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui___calendar_activity}{Ui\_CalendarActivity}}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ QGridLayout\ *gridLayout;}
+\DoxyCodeLine{00030\ \ \ \ \ QVBoxLayout\ *verticalLayout\_2;}
+\DoxyCodeLine{00031\ \ \ \ \ QHBoxLayout\ *horizontalLayout\_2;}
+\DoxyCodeLine{00032\ \ \ \ \ QVBoxLayout\ *verticalLayout;}
+\DoxyCodeLine{00033\ \ \ \ \ QCalendarWidget\ *calendarSets;}
+\DoxyCodeLine{00034\ \ \ \ \ QHBoxLayout\ *horizontalLayout;}
+\DoxyCodeLine{00035\ \ \ \ \ QPushButton\ *addSet;}
+\DoxyCodeLine{00036\ \ \ \ \ QPushButton\ *removeSet;}
+\DoxyCodeLine{00037\ \ \ \ \ QPushButton\ *go\_backButton;}
+\DoxyCodeLine{00038\ \ \ \ \ QTableWidget\ *SetstableView;}
+\DoxyCodeLine{00039\ \ \ \ \ QTableView\ *exerciseLogsView;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QDialog\ *\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}})}
+\DoxyCodeLine{00042\ \ \ \ \ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}}-\/>objectName().isEmpty())}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_calendar_activity}{CalendarActivity}}-\/>setObjectName(\textcolor{stringliteral}{"{}CalendarActivity"{}});}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_calendar_activity}{CalendarActivity}}-\/>resize(558,\ 371);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ QSizePolicy\ sizePolicy(QSizePolicy::Expanding,\ QSizePolicy::Expanding);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ sizePolicy.setHorizontalStretch(0);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ sizePolicy.setVerticalStretch(0);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ sizePolicy.setHeightForWidth(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}}-\/>sizePolicy().hasHeightForWidth());}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_calendar_activity}{CalendarActivity}}-\/>setSizePolicy(sizePolicy);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ gridLayout\ =\ \textcolor{keyword}{new}\ QGridLayout(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}});}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ gridLayout-\/>setObjectName(\textcolor{stringliteral}{"{}gridLayout"{}});}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ verticalLayout\_2\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout\_2"{}});}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ horizontalLayout\_2\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout\_2"{}});}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ verticalLayout\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ verticalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout"{}});}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ calendarSets\ =\ \textcolor{keyword}{new}\ QCalendarWidget(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}});}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ calendarSets-\/>setObjectName(\textcolor{stringliteral}{"{}calendarSets"{}});}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ verticalLayout-\/>addWidget(calendarSets);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ horizontalLayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout"{}});}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ addSet\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ addSet-\/>setObjectName(\textcolor{stringliteral}{"{}addSet"{}});}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(addSet);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ removeSet\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}});}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ removeSet-\/>setObjectName(\textcolor{stringliteral}{"{}removeSet"{}});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(removeSet);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ go\_backButton\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}});}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ go\_backButton-\/>setObjectName(\textcolor{stringliteral}{"{}go\_backButton"{}});}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(go\_backButton);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ verticalLayout-\/>addLayout(horizontalLayout);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>addLayout(verticalLayout);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ SetstableView\ =\ \textcolor{keyword}{new}\ QTableWidget(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}});}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ SetstableView-\/>setObjectName(\textcolor{stringliteral}{"{}SetstableView"{}});}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>addWidget(SetstableView);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addLayout(horizontalLayout\_2);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ exerciseLogsView\ =\ \textcolor{keyword}{new}\ QTableView(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}});}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ exerciseLogsView-\/>setObjectName(\textcolor{stringliteral}{"{}exerciseLogsView"{}});}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(exerciseLogsView);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ gridLayout-\/>addLayout(verticalLayout\_2,\ 0,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ retranslateUi(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}});}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}});}
+\DoxyCodeLine{00107\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QDialog\ *\mbox{\hyperlink{class_calendar_activity}{CalendarActivity}})}
+\DoxyCodeLine{00110\ \ \ \ \ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_calendar_activity}{CalendarActivity}}-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}CalendarActivity"{}},\ \textcolor{stringliteral}{"{}FitApp\ -\/\ \(\backslash\)320\(\backslash\)232\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)264\(\backslash\)320\(\backslash\)260\(\backslash\)321\(\backslash\)200\(\backslash\)321\(\backslash\)214\ \(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)272\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)270\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)276\(\backslash\)321\(\backslash\)201\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)270"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ addSet-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CalendarActivity"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)224\(\backslash\)320\(\backslash\)276\(\backslash\)320\(\backslash\)261\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214\ \(\backslash\)321\(\backslash\)201\(\backslash\)320\(\backslash\)265\(\backslash\)321\(\backslash\)202"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ removeSet-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CalendarActivity"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)243\(\backslash\)320\(\backslash\)264\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214\ \(\backslash\)321\(\backslash\)201\(\backslash\)320\(\backslash\)265\(\backslash\)321\(\backslash\)202"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ go\_backButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CalendarActivity"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)235\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)267\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)264"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00115\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_calendar_activity}{CalendarActivity}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui___calendar_activity}{Ui\_CalendarActivity}}\ \{\};}
+\DoxyCodeLine{00121\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_CALENDARACTIVITY\_H}}
+
+\end{DoxyCode}

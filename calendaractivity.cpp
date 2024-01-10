@@ -221,7 +221,7 @@ void CalendarActivity::on_calendarSets_selectionChanged()
 
 
 void CalendarActivity::on_go_backButton_clicked() {
-    schedule *scheduleWindow = new schedule(m_username);
+    Schedule *scheduleWindow = new Schedule(m_username);
 
     // Установка флага для автоматического удаления окна после закрытия
     scheduleWindow->setAttribute(Qt::WA_DeleteOnClose);

@@ -36,9 +36,9 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSscheduleENDCLASS_t {};
-static constexpr auto qt_meta_stringdata_CLASSscheduleENDCLASS = QtMocHelpers::stringData(
-    "schedule",
+struct qt_meta_stringdata_CLASSScheduleENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSScheduleENDCLASS = QtMocHelpers::stringData(
+    "Schedule",
     "on_saveButton_clicked",
     "",
     "on_cancelButton_clicked",
@@ -49,7 +49,7 @@ static constexpr auto qt_meta_stringdata_CLASSscheduleENDCLASS = QtMocHelpers::s
     "on_timetableButton_clicked"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
-struct qt_meta_stringdata_CLASSscheduleENDCLASS_t {
+struct qt_meta_stringdata_CLASSScheduleENDCLASS_t {
     uint offsetsAndSizes[18];
     char stringdata0[9];
     char stringdata1[22];
@@ -62,10 +62,10 @@ struct qt_meta_stringdata_CLASSscheduleENDCLASS_t {
     char stringdata8[27];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_CLASSscheduleENDCLASS_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_CLASSscheduleENDCLASS_t qt_meta_stringdata_CLASSscheduleENDCLASS = {
+    uint(sizeof(qt_meta_stringdata_CLASSScheduleENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSScheduleENDCLASS_t qt_meta_stringdata_CLASSScheduleENDCLASS = {
     {
-        QT_MOC_LITERAL(0, 8),  // "schedule"
+        QT_MOC_LITERAL(0, 8),  // "Schedule"
         QT_MOC_LITERAL(9, 21),  // "on_saveButton_clicked"
         QT_MOC_LITERAL(31, 0),  // ""
         QT_MOC_LITERAL(32, 23),  // "on_cancelButton_clicked"
@@ -75,7 +75,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSscheduleENDCLASS_t qt_meta_stri
         QT_MOC_LITERAL(123, 20),  // "on_setButton_clicked"
         QT_MOC_LITERAL(144, 26)   // "on_timetableButton_clicked"
     },
-    "schedule",
+    "Schedule",
     "on_saveButton_clicked",
     "",
     "on_cancelButton_clicked",
@@ -89,7 +89,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSscheduleENDCLASS_t qt_meta_stri
 #endif // !QT_MOC_HAS_STRING_DATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSscheduleENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSScheduleENDCLASS[] = {
 
  // content:
       12,       // revision
@@ -123,15 +123,15 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSscheduleENDCLASS[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject schedule::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject Schedule::staticMetaObject = { {
     QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
-    qt_meta_stringdata_CLASSscheduleENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSscheduleENDCLASS,
+    qt_meta_stringdata_CLASSScheduleENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSScheduleENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSscheduleENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSScheduleENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<schedule, std::true_type>,
+        QtPrivate::TypeAndForceComplete<Schedule, std::true_type>,
         // method 'on_saveButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_cancelButton_clicked'
@@ -150,10 +150,10 @@ Q_CONSTINIT const QMetaObject schedule::staticMetaObject = { {
     nullptr
 } };
 
-void schedule::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Schedule::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<schedule *>(_o);
+        auto *_t = static_cast<Schedule *>(_o);
         (void)_t;
         switch (_id) {
         case 0: _t->on_saveButton_clicked(); break;
@@ -169,20 +169,20 @@ void schedule::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     (void)_a;
 }
 
-const QMetaObject *schedule::metaObject() const
+const QMetaObject *Schedule::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *schedule::qt_metacast(const char *_clname)
+void *Schedule::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSscheduleENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSScheduleENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
-int schedule::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Schedule::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)

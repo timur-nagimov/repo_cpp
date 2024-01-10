@@ -20,7 +20,7 @@ class sets;
  * Этот класс позволяет загружать, добавлять, удалять и отображать наборы упражнений,
  * а также устанавливать соединения между элементами пользовательского интерфейса.
  */
-class sets : public QDialog
+class Sets : public QDialog
 {
     Q_OBJECT
 
@@ -29,13 +29,13 @@ public:
      * \brief Конструктор класса sets.
      * \param parent Указатель на родительский виджет.
      */
-    explicit sets(QString username, QWidget *parent = nullptr);
+    explicit Sets(QString username, QWidget *parent = nullptr);
 
 
     /*!
      * \brief Деструктор класса sets.
      */
-    ~sets();
+    ~Sets();
 
 private slots:
     /*!

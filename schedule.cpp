@@ -14,7 +14,12 @@
 #include <QComboBox>
 #include <QMessageBox>
 
-
+/*!
+ * \class ValidatingComboBoxDelegate schedule.cpp "schedule.h"
+ * \brief Класс ValidatingComboBoxDelegate представляет собой диалоговое окно для управления активностями календаря.
+ *
+ * Класс ValidatingComboBoxDelegate является наследником класса QItemDele
+ */
 class ValidatingComboBoxDelegate : public QItemDelegate {
 public:
     ValidatingComboBoxDelegate(const QStringList &items, QObject *parent = 0)
@@ -44,7 +49,7 @@ private:
 
 
 
-schedule::schedule(QString username, QWidget *parent) :
+Schedule::Schedule(QString username, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::schedule),
     model(new QSqlTableModel(this)),  // Инициализация model
@@ -88,7 +93,7 @@ schedule::schedule(QString username, QWidget *parent) :
 
 }
 
-schedule::schedule(QWidget *parent)
+Schedule::Schedule(QWidget *parent)
     : QDialog(parent),
     ui(new Ui::schedule),
     model(new QSqlTableModel(this)),
@@ -98,12 +103,12 @@ schedule::schedule(QWidget *parent)
     // Дополнительная инициализация, если требуется
 }
 
-schedule::~schedule()
+Schedule::~Schedule()
 {
     delete ui;
 }
 
-void schedule::on_saveButton_clicked()
+void Schedule::on_saveButton_clicked()
 {
     if (model != nullptr) {
         model->submitAll();
@@ -115,7 +120,7 @@ void schedule::on_saveButton_clicked()
 
 
 
-void schedule::on_cancelButton_clicked()
+void Schedule::on_cancelButton_clicked()
 {
     if (model != nullptr) {
         model->revertAll();  // Отменяет все незафиксированные изменения
@@ -126,7 +131,7 @@ void schedule::on_cancelButton_clicked()
 }
 
 
-void schedule::on_addButton_clicked() {
+void Schedule::on_addButton_clicked() {
     QString exerciseName = ui->exerciseNameLineEdit->text();
     QString muscleGroup = ui->muscleGroupComboBox->currentText();
     QString difficulty = ui->difficultyComboBox->currentText();
@@ -179,7 +184,7 @@ void schedule::on_addButton_clicked() {
 
 
 
-void schedule::on_DeleteButton_clicked()
+void Schedule::on_DeleteButton_clicked()
 {
     QItemSelectionModel *select = ui->tableView->selectionModel();
 
@@ -196,7 +201,7 @@ void schedule::on_DeleteButton_clicked()
 }
 
 
-void schedule::on_authButton_clicked()
+void Schedule::on_authButton_clicked()
 {
     // Создание и отображение главного окна авторизации
     MainWindow *mainwindow = new MainWindow();
@@ -207,9 +212,9 @@ void schedule::on_authButton_clicked()
 }
 
 
-void schedule::on_setButton_clicked()
+void Schedule::on_setButton_clicked()
 {
-    sets *setsWindow = new sets(m_username);
+    Sets *setsWindow = new Sets(m_username);
     setsWindow->show();
 
     // Закрытие текущего окна
@@ -217,7 +222,7 @@ void schedule::on_setButton_clicked()
 }
 
 
-void schedule::on_timetableButton_clicked()
+void Schedule::on_timetableButton_clicked()
 {
     // Создание и отображение главного окна авторизации
     CalendarActivity *calendaractiv = new CalendarActivity(m_username);

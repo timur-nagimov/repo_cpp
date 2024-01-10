@@ -1,0 +1,218 @@
+\doxysection{ui\+\_\+schedule.\+h}
+\hypertarget{ui__schedule_8h_source}{}\label{ui__schedule_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'schedule.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 6.6.0}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_SCHEDULE\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_SCHEDULE\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QComboBox>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QDialog>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QGridLayout>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHeaderView>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLineEdit>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTableView>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QtWidgets/QVBoxLayout>}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui__schedule}{Ui\_schedule}}}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ QVBoxLayout\ *verticalLayout\_5;}
+\DoxyCodeLine{00031\ \ \ \ \ QTableView\ *tableView;}
+\DoxyCodeLine{00032\ \ \ \ \ QLabel\ *label;}
+\DoxyCodeLine{00033\ \ \ \ \ QGridLayout\ *gridLayout;}
+\DoxyCodeLine{00034\ \ \ \ \ QPushButton\ *cancelButton;}
+\DoxyCodeLine{00035\ \ \ \ \ QPushButton\ *saveButton;}
+\DoxyCodeLine{00036\ \ \ \ \ QPushButton\ *DeleteButton;}
+\DoxyCodeLine{00037\ \ \ \ \ QLabel\ *label\_2;}
+\DoxyCodeLine{00038\ \ \ \ \ QVBoxLayout\ *verticalLayout\_4;}
+\DoxyCodeLine{00039\ \ \ \ \ QHBoxLayout\ *horizontalLayout\_2;}
+\DoxyCodeLine{00040\ \ \ \ \ QVBoxLayout\ *verticalLayout;}
+\DoxyCodeLine{00041\ \ \ \ \ QLabel\ *label\_5;}
+\DoxyCodeLine{00042\ \ \ \ \ QComboBox\ *difficultyComboBox;}
+\DoxyCodeLine{00043\ \ \ \ \ QVBoxLayout\ *verticalLayout\_2;}
+\DoxyCodeLine{00044\ \ \ \ \ QLabel\ *label\_3;}
+\DoxyCodeLine{00045\ \ \ \ \ QLineEdit\ *exerciseNameLineEdit;}
+\DoxyCodeLine{00046\ \ \ \ \ QVBoxLayout\ *verticalLayout\_3;}
+\DoxyCodeLine{00047\ \ \ \ \ QLabel\ *label\_4;}
+\DoxyCodeLine{00048\ \ \ \ \ QComboBox\ *muscleGroupComboBox;}
+\DoxyCodeLine{00049\ \ \ \ \ QPushButton\ *addButton;}
+\DoxyCodeLine{00050\ \ \ \ \ QHBoxLayout\ *horizontalLayout;}
+\DoxyCodeLine{00051\ \ \ \ \ QPushButton\ *authButton;}
+\DoxyCodeLine{00052\ \ \ \ \ QPushButton\ *timetableButton;}
+\DoxyCodeLine{00053\ \ \ \ \ QPushButton\ *setButton;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QDialog\ *\mbox{\hyperlink{classschedule}{schedule}})}
+\DoxyCodeLine{00056\ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classschedule}{schedule}}-\/>objectName().isEmpty())}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classschedule}{schedule}}-\/>setObjectName(\textcolor{stringliteral}{"{}schedule"{}});}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ QSizePolicy\ sizePolicy(QSizePolicy::Expanding,\ QSizePolicy::Expanding);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ sizePolicy.setHorizontalStretch(0);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ sizePolicy.setVerticalStretch(0);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ sizePolicy.setHeightForWidth(\mbox{\hyperlink{classschedule}{schedule}}-\/>sizePolicy().hasHeightForWidth());}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classschedule}{schedule}}-\/>setSizePolicy(sizePolicy);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classschedule}{schedule}}-\/>setAcceptDrops(\textcolor{keyword}{false});}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ verticalLayout\_5\ =\ \textcolor{keyword}{new}\ QVBoxLayout(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ verticalLayout\_5-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout\_5"{}});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ tableView\ =\ \textcolor{keyword}{new}\ QTableView(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ tableView-\/>setObjectName(\textcolor{stringliteral}{"{}tableView"{}});}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ verticalLayout\_5-\/>addWidget(tableView);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ label\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ label-\/>setObjectName(\textcolor{stringliteral}{"{}label"{}});}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ verticalLayout\_5-\/>addWidget(label);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ gridLayout\ =\ \textcolor{keyword}{new}\ QGridLayout();}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ gridLayout-\/>setObjectName(\textcolor{stringliteral}{"{}gridLayout"{}});}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ cancelButton\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ cancelButton-\/>setObjectName(\textcolor{stringliteral}{"{}cancelButton"{}});}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ gridLayout-\/>addWidget(cancelButton,\ 1,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ saveButton\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ saveButton-\/>setObjectName(\textcolor{stringliteral}{"{}saveButton"{}});}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ gridLayout-\/>addWidget(saveButton,\ 0,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ DeleteButton\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ DeleteButton-\/>setObjectName(\textcolor{stringliteral}{"{}DeleteButton"{}});}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ gridLayout-\/>addWidget(DeleteButton,\ 2,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ verticalLayout\_5-\/>addLayout(gridLayout);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ label\_2\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ label\_2-\/>setObjectName(\textcolor{stringliteral}{"{}label\_2"{}});}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ verticalLayout\_5-\/>addWidget(label\_2);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ verticalLayout\_4\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ verticalLayout\_4-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout\_4"{}});}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ horizontalLayout\_2\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout\_2"{}});}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ verticalLayout\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ verticalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout"{}});}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ label\_5\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ label\_5-\/>setObjectName(\textcolor{stringliteral}{"{}label\_5"{}});}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ verticalLayout-\/>addWidget(label\_5);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ difficultyComboBox\ =\ \textcolor{keyword}{new}\ QComboBox(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ difficultyComboBox-\/>setObjectName(\textcolor{stringliteral}{"{}difficultyComboBox"{}});}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ verticalLayout-\/>addWidget(difficultyComboBox);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>addLayout(verticalLayout);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ verticalLayout\_2\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout\_2"{}});}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ label\_3\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ label\_3-\/>setObjectName(\textcolor{stringliteral}{"{}label\_3"{}});}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(label\_3);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ exerciseNameLineEdit\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ exerciseNameLineEdit-\/>setObjectName(\textcolor{stringliteral}{"{}exerciseNameLineEdit"{}});}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(exerciseNameLineEdit);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>addLayout(verticalLayout\_2);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ verticalLayout\_3\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout\_3"{}});}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ label\_4\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ label\_4-\/>setObjectName(\textcolor{stringliteral}{"{}label\_4"{}});}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>addWidget(label\_4);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ muscleGroupComboBox\ =\ \textcolor{keyword}{new}\ QComboBox(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ muscleGroupComboBox-\/>setObjectName(\textcolor{stringliteral}{"{}muscleGroupComboBox"{}});}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>addWidget(muscleGroupComboBox);}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>addLayout(verticalLayout\_3);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ verticalLayout\_4-\/>addLayout(horizontalLayout\_2);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ addButton\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ addButton-\/>setObjectName(\textcolor{stringliteral}{"{}addButton"{}});}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ verticalLayout\_4-\/>addWidget(addButton);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ verticalLayout\_5-\/>addLayout(verticalLayout\_4);}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ horizontalLayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout"{}});}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ authButton\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ authButton-\/>setObjectName(\textcolor{stringliteral}{"{}authButton"{}});}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(authButton);}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ timetableButton\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ timetableButton-\/>setObjectName(\textcolor{stringliteral}{"{}timetableButton"{}});}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(timetableButton);}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ setButton\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ setButton-\/>setObjectName(\textcolor{stringliteral}{"{}setButton"{}});}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(setButton);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ verticalLayout\_5-\/>addLayout(horizontalLayout);}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ retranslateUi(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\mbox{\hyperlink{classschedule}{schedule}});}
+\DoxyCodeLine{00186\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QDialog\ *\mbox{\hyperlink{classschedule}{schedule}})}
+\DoxyCodeLine{00189\ \ \ \ \ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classschedule}{schedule}}-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}FitApp\ -\/\ \(\backslash\)320\(\backslash\)243\(\backslash\)320\(\backslash\)277\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)266\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)217"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ label-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)255\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)274\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)213\ \(\backslash\)321\(\backslash\)203\(\backslash\)320\(\backslash\)277\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)217"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ cancelButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)236\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)274\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214\ \(\backslash\)320\(\backslash\)270\(\backslash\)320\(\backslash\)267\(\backslash\)320\(\backslash\)274\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)217"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ saveButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)241\(\backslash\)320\(\backslash\)276\(\backslash\)321\(\backslash\)205\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214\ \(\backslash\)320\(\backslash\)270\(\backslash\)320\(\backslash\)267\(\backslash\)320\(\backslash\)274\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)217"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ DeleteButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)243\(\backslash\)320\(\backslash\)264\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214\ \(\backslash\)320\(\backslash\)262\(\backslash\)321\(\backslash\)213\(\backslash\)320\(\backslash\)264\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)275\(\backslash\)321\(\backslash\)213\(\backslash\)320\(\backslash\)265\ \(\backslash\)320\(\backslash\)267\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)277\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)201\(\backslash\)320\(\backslash\)270"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ label\_2-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)255\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)274\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)213\ \(\backslash\)320\(\backslash\)264\(\backslash\)320\(\backslash\)276\(\backslash\)320\(\backslash\)261\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)217"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ label\_5-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)241\(\backslash\)320\(\backslash\)273\(\backslash\)320\(\backslash\)276\(\backslash\)320\(\backslash\)266\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)276\(\backslash\)321\(\backslash\)201\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ label\_3-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)235\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)267\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)320\(\backslash\)265\ \(\backslash\)321\(\backslash\)203\(\backslash\)320\(\backslash\)277\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)266\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)217"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ label\_4-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)223\(\backslash\)321\(\backslash\)200\(\backslash\)321\(\backslash\)203\(\backslash\)320\(\backslash\)277\(\backslash\)320\(\backslash\)277\(\backslash\)320\(\backslash\)260\ \(\backslash\)320\(\backslash\)274\(\backslash\)321\(\backslash\)213\(\backslash\)321\(\backslash\)211\(\backslash\)321\(\backslash\)206"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ addButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)224\(\backslash\)320\(\backslash\)276\(\backslash\)320\(\backslash\)261\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214\ \(\backslash\)321\(\backslash\)203\(\backslash\)320\(\backslash\)277\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)266\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)320\(\backslash\)265"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ authButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)222\(\backslash\)320\(\backslash\)265\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)275\(\backslash\)321\(\backslash\)203\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214\(\backslash\)321\(\backslash\)201\(\backslash\)321\(\backslash\)217\ \(\backslash\)320\(\backslash\)272\ \(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)262\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)276\(\backslash\)321\(\backslash\)200\(\backslash\)320\(\backslash\)270\(\backslash\)320\(\backslash\)267\(\backslash\)320\(\backslash\)260\(\backslash\)321\(\backslash\)206\(\backslash\)320\(\backslash\)270\(\backslash\)320\(\backslash\)270"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ timetableButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)240\(\backslash\)320\(\backslash\)260\(\backslash\)321\(\backslash\)201\(\backslash\)320\(\backslash\)277\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)201\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)320\(\backslash\)265"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ setButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}schedule"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)241\(\backslash\)320\(\backslash\)276\(\backslash\)320\(\backslash\)267\(\backslash\)320\(\backslash\)264\(\backslash\)320\(\backslash\)260\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214\ \(\backslash\)321\(\backslash\)201\(\backslash\)320\(\backslash\)265\(\backslash\)321\(\backslash\)202"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00203\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \};}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1schedule}{schedule}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui__schedule}{Ui\_schedule}}\ \{\};}
+\DoxyCodeLine{00209\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_SCHEDULE\_H}}
+
+\end{DoxyCode}

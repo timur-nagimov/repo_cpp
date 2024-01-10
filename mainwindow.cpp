@@ -61,7 +61,7 @@ void MainWindow::on_authButton_clicked()
             if(passwordHash == dbPasswordHash) {
                 QMessageBox::information(this, "Аутентификация", "Пользователь успешно аутентифицирован.");
 
-                schedule *scheduleWindow = new schedule(username);
+                Schedule *scheduleWindow = new Schedule(username);
                 scheduleWindow->show();
 
                 // Закрытие текущего окна (необязательно)

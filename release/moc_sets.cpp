@@ -36,9 +36,9 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSsetsENDCLASS_t {};
-static constexpr auto qt_meta_stringdata_CLASSsetsENDCLASS = QtMocHelpers::stringData(
-    "sets",
+struct qt_meta_stringdata_CLASSSetsENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSSetsENDCLASS = QtMocHelpers::stringData(
+    "Sets",
     "loadExercises",
     "",
     "addSet",
@@ -49,7 +49,7 @@ static constexpr auto qt_meta_stringdata_CLASSsetsENDCLASS = QtMocHelpers::strin
     "on_pushButton_clicked"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
-struct qt_meta_stringdata_CLASSsetsENDCLASS_t {
+struct qt_meta_stringdata_CLASSSetsENDCLASS_t {
     uint offsetsAndSizes[18];
     char stringdata0[5];
     char stringdata1[14];
@@ -62,10 +62,10 @@ struct qt_meta_stringdata_CLASSsetsENDCLASS_t {
     char stringdata8[22];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_CLASSsetsENDCLASS_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_CLASSsetsENDCLASS_t qt_meta_stringdata_CLASSsetsENDCLASS = {
+    uint(sizeof(qt_meta_stringdata_CLASSSetsENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSSetsENDCLASS_t qt_meta_stringdata_CLASSSetsENDCLASS = {
     {
-        QT_MOC_LITERAL(0, 4),  // "sets"
+        QT_MOC_LITERAL(0, 4),  // "Sets"
         QT_MOC_LITERAL(5, 13),  // "loadExercises"
         QT_MOC_LITERAL(19, 0),  // ""
         QT_MOC_LITERAL(20, 6),  // "addSet"
@@ -75,7 +75,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSsetsENDCLASS_t qt_meta_stringda
         QT_MOC_LITERAL(63, 28),  // "on_addSet_pushButton_clicked"
         QT_MOC_LITERAL(92, 21)   // "on_pushButton_clicked"
     },
-    "sets",
+    "Sets",
     "loadExercises",
     "",
     "addSet",
@@ -89,7 +89,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSsetsENDCLASS_t qt_meta_stringda
 #endif // !QT_MOC_HAS_STRING_DATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSsetsENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSSetsENDCLASS[] = {
 
  // content:
       12,       // revision
@@ -123,15 +123,15 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSsetsENDCLASS[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject sets::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject Sets::staticMetaObject = { {
     QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
-    qt_meta_stringdata_CLASSsetsENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSsetsENDCLASS,
+    qt_meta_stringdata_CLASSSetsENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSSetsENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSsetsENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSSetsENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<sets, std::true_type>,
+        QtPrivate::TypeAndForceComplete<Sets, std::true_type>,
         // method 'loadExercises'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'addSet'
@@ -150,10 +150,10 @@ Q_CONSTINIT const QMetaObject sets::staticMetaObject = { {
     nullptr
 } };
 
-void sets::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Sets::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<sets *>(_o);
+        auto *_t = static_cast<Sets *>(_o);
         (void)_t;
         switch (_id) {
         case 0: _t->loadExercises(); break;
@@ -169,20 +169,20 @@ void sets::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
     (void)_a;
 }
 
-const QMetaObject *sets::metaObject() const
+const QMetaObject *Sets::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *sets::qt_metacast(const char *_clname)
+void *Sets::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSsetsENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSSetsENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
-int sets::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Sets::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)

@@ -7,7 +7,7 @@
     #include <QMessageBox>
     #include <QCheckBox>
 
-    sets::sets(QString username, QWidget *parent) :
+    Sets::Sets(QString username, QWidget *parent) :
         QDialog(parent),
         ui(new Ui::sets),
         m_username(username)
@@ -20,7 +20,7 @@
         // Запреты на редактирование таблиц
     }
 
-    void sets::loadExercises() {
+    void Sets::loadExercises() {
         QSqlQuery query;
         if (!query.exec("SELECT name FROM exercises")) {
             qDebug() << "Ошибка запроса: " << query.lastError().text();
@@ -74,7 +74,7 @@
         this->setWindowTitle("FitApp - сеты");
     }
 
-    void sets::loadSets() {
+    void Sets::loadSets() {
         QSqlQuery query;
         if (!query.exec("SELECT set_id, set_name FROM exercise_sets")) {
             qDebug() << "Ошибка запроса при загрузке сетов: " << query.lastError().text();
@@ -133,12 +133,12 @@
 
 
 
-    void sets::setupConnections() {
-        connect(ui->addSet_pushButton, &QPushButton::clicked, this, &sets::addSet);
-        connect(ui->deleteSet_pushButton, &QPushButton::clicked, this, &sets::deleteSet);
+    void Sets::setupConnections() {
+        connect(ui->addSet_pushButton, &QPushButton::clicked, this, &Sets::addSet);
+        connect(ui->deleteSet_pushButton, &QPushButton::clicked, this, &Sets::deleteSet);
     }
 
-    void sets::addSet() {
+    void Sets::addSet() {
         QString setName = ui->setname_lineEdit->text().trimmed();
         if (setName.isEmpty()) {
             QMessageBox::warning(this, "Предупреждение", "Название сета не может быть пустым.");
@@ -203,7 +203,7 @@
 
 
     // Реализация deleteSet
-    void sets::deleteSet() {
+    void Sets::deleteSet() {
         auto selectedRows = ui->exercise_tableWidget->selectionModel()->selectedRows();
         QSqlQuery query;
         QVector<int> setIdsToDelete;
@@ -241,18 +241,18 @@
     }
 
 
-    sets::~sets() {
+    Sets::~Sets() {
         delete ui;
     }
 
-    void sets::on_addSet_pushButton_clicked() {
+    void Sets::on_addSet_pushButton_clicked() {
         // Обновляем список сетов после добавления нового сета
         loadSets();
     }
 
-    void sets::on_pushButton_clicked()
+    void Sets::on_pushButton_clicked()
     {
-        schedule *scheduleWindow = new schedule(m_username);
+        Schedule *scheduleWindow = new Schedule(m_username);
 
         // Установка флага для автоматического удаления окна после закрытия
         scheduleWindow->setAttribute(Qt::WA_DeleteOnClose);

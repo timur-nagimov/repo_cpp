@@ -20,7 +20,7 @@ class schedule;
  * Этот класс позволяет добавлять, удалять и отображать упражнения,
  * а также обрабатывает действия пользователя в пользовательском интерфейсе.
  */
-class schedule : public QDialog
+class Schedule : public QDialog
 {
     Q_OBJECT
 
@@ -29,19 +29,19 @@ public:
      * \brief Конструктор класса schedule.
      * \param parent Указатель на родительский виджет.
      */
-    explicit schedule(QWidget *parent = nullptr);
+    explicit Schedule(QWidget *parent = nullptr);
 
     /*!
      * \brief Перегруженный конструктор класса schedule с указанием имени пользователя.
      * \param username Логин пользователя.
      * \param parent Указатель на родительский виджет.
      */
-    explicit schedule(QString username, QWidget *parent = nullptr);
+    explicit Schedule(QString username, QWidget *parent = nullptr);
 
     /*!
      * \brief Деструктор класса schedule.
      */
-    ~schedule();
+    ~Schedule();
 
 private slots:
     /*!
