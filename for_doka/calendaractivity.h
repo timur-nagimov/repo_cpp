@@ -13,11 +13,12 @@ namespace Ui {
 class CalendarActivity;
 }
 
-/*!
- * \class CalendarActivity calendaractivity.h "calendaractivity.h"
- * \brief Класс CalendarActivity представляет собой диалоговое окно для управления активностями календаря.
+/**
+ * @class CalendarActivity
+ * @brief Класс для управления активностью календаря в приложении.
  *
- * Класс CalendarActivity управляет добавлением, удалением и отображением активностей и сетов упражнений в календаре.
+ * CalendarActivity представляет собой диалоговое окно, отображающее календарь
+ * и список упражнений пользователя, а также позволяет управлять этими данными.
  */
 class CalendarActivity : public QDialog
 {
