@@ -1,0 +1,49 @@
+\doxysection{sets.\+h}
+\hypertarget{sets_8h_source}{}\label{sets_8h_source}\mbox{\hyperlink{sets_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SETS\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SETS\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QSqlTableModel>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }sets;}
+\DoxyCodeLine{00014\ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sets}{Sets}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_sets}{Sets}}(QString\ username,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_sets_aa2a357a70b80404759d079771e025630}{\string~Sets}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ loadExercises();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ addSet();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteSet();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ setupConnections();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ loadSets();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_addSet\_pushButton\_clicked();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00074\ \ \ \ \ Ui::sets\ *ui;\ }
+\DoxyCodeLine{00075\ \ \ \ \ QSqlTableModel\ *model;\ }
+\DoxyCodeLine{00076\ \ \ \ \ QString\ m\_username;\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SETS\_H}}
+
+\end{DoxyCode}

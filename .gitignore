@@ -3,3 +3,7 @@ debug
 design
 build
 .qtc_clangd
+*.stash
+*.Debug
+*.Release
+*.pro.user

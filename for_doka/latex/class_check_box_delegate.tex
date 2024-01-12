@@ -1,0 +1,114 @@
+\doxysection{Check\+Box\+Delegate Class Reference}
+\hypertarget{class_check_box_delegate}{}\label{class_check_box_delegate}\index{CheckBoxDelegate@{CheckBoxDelegate}}
+
+
+Класс делегата для отображения и управления чекбоксами в представлении.  
+
+
+Inheritance diagram for Check\+Box\+Delegate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_check_box_delegate}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QWidget \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_check_box_delegate_a334d9abf0128e94bd07b17aa191a67f9}{create\+Editor}} (QWidget \texorpdfstring{$\ast$}{*}parent, const QStyle\+Option\+View\+Item \&option, const QModel\+Index \&index) const override
+\begin{DoxyCompactList}\small\item\em Создает редактор (чекбокс) для элемента модели. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_check_box_delegate_a840b7a223824770792c3fcce18d692e0}{set\+Editor\+Data}} (QWidget \texorpdfstring{$\ast$}{*}editor, const QModel\+Index \&index) const override
+\begin{DoxyCompactList}\small\item\em Устанавливает данные в редакторе. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_check_box_delegate_af81a1f1e01756f185e437acf6d31834b}{set\+Model\+Data}} (QWidget \texorpdfstring{$\ast$}{*}editor, QAbstract\+Item\+Model \texorpdfstring{$\ast$}{*}model, const QModel\+Index \&index) const override
+\begin{DoxyCompactList}\small\item\em Сохраняет данные из редактора в модель. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_check_box_delegate_a92b0b54f2104ab6613e8fb78155f5d7b}{update\+Editor\+Geometry}} (QWidget \texorpdfstring{$\ast$}{*}editor, const QStyle\+Option\+View\+Item \&option, const QModel\+Index \&index) const override
+\begin{DoxyCompactList}\small\item\em Обновляет геометрию редактора. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс делегата для отображения и управления чекбоксами в представлении. 
+
+\doxylink{class_check_box_delegate}{Check\+Box\+Delegate} наследуется от QStyled\+Item\+Delegate и предназначен для обработки отображения и интерактивности чекбоксов в модели представления. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_check_box_delegate_a334d9abf0128e94bd07b17aa191a67f9}\label{class_check_box_delegate_a334d9abf0128e94bd07b17aa191a67f9} 
+\index{CheckBoxDelegate@{CheckBoxDelegate}!createEditor@{createEditor}}
+\index{createEditor@{createEditor}!CheckBoxDelegate@{CheckBoxDelegate}}
+\doxysubsubsection{\texorpdfstring{createEditor()}{createEditor()}}
+{\footnotesize\ttfamily QWidget \texorpdfstring{$\ast$}{*} Check\+Box\+Delegate\+::create\+Editor (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent,  }\item[{const QStyle\+Option\+View\+Item \&}]{option,  }\item[{const QModel\+Index \&}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Создает редактор (чекбокс) для элемента модели. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский виджет для редактора. \\
+\hline
+{\em option} & Опции стиля для редактора. \\
+\hline
+{\em index} & Индекс модели для редактирования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на созданный виджет редактора. 
+\end{DoxyReturn}
+\Hypertarget{class_check_box_delegate_a840b7a223824770792c3fcce18d692e0}\label{class_check_box_delegate_a840b7a223824770792c3fcce18d692e0} 
+\index{CheckBoxDelegate@{CheckBoxDelegate}!setEditorData@{setEditorData}}
+\index{setEditorData@{setEditorData}!CheckBoxDelegate@{CheckBoxDelegate}}
+\doxysubsubsection{\texorpdfstring{setEditorData()}{setEditorData()}}
+{\footnotesize\ttfamily void Check\+Box\+Delegate\+::set\+Editor\+Data (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{editor,  }\item[{const QModel\+Index \&}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Устанавливает данные в редакторе. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em editor} & Редактор (чекбокс). \\
+\hline
+{\em index} & Индекс модели, данные которого нужно отобразить. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_check_box_delegate_af81a1f1e01756f185e437acf6d31834b}\label{class_check_box_delegate_af81a1f1e01756f185e437acf6d31834b} 
+\index{CheckBoxDelegate@{CheckBoxDelegate}!setModelData@{setModelData}}
+\index{setModelData@{setModelData}!CheckBoxDelegate@{CheckBoxDelegate}}
+\doxysubsubsection{\texorpdfstring{setModelData()}{setModelData()}}
+{\footnotesize\ttfamily void Check\+Box\+Delegate\+::set\+Model\+Data (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{editor,  }\item[{QAbstract\+Item\+Model \texorpdfstring{$\ast$}{*}}]{model,  }\item[{const QModel\+Index \&}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Сохраняет данные из редактора в модель. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em editor} & Редактор (чекбокс). \\
+\hline
+{\em model} & Модель, в которую нужно сохранить данные. \\
+\hline
+{\em index} & Индекс модели, в которую нужно сохранить данные. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_check_box_delegate_a92b0b54f2104ab6613e8fb78155f5d7b}\label{class_check_box_delegate_a92b0b54f2104ab6613e8fb78155f5d7b} 
+\index{CheckBoxDelegate@{CheckBoxDelegate}!updateEditorGeometry@{updateEditorGeometry}}
+\index{updateEditorGeometry@{updateEditorGeometry}!CheckBoxDelegate@{CheckBoxDelegate}}
+\doxysubsubsection{\texorpdfstring{updateEditorGeometry()}{updateEditorGeometry()}}
+{\footnotesize\ttfamily void Check\+Box\+Delegate\+::update\+Editor\+Geometry (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{editor,  }\item[{const QStyle\+Option\+View\+Item \&}]{option,  }\item[{const QModel\+Index \&}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Обновляет геометрию редактора. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em editor} & Редактор (чекбокс). \\
+\hline
+{\em option} & Опции стиля для редактора. \\
+\hline
+{\em index} & Индекс модели, для которой обновляется редактор. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+calendaractivity.\+cpp\end{DoxyCompactItemize}

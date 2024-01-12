@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['schedule_0',['schedule',['../classschedule.html#a610e68fa754616eec50d03f200dd0f14',1,'schedule::schedule(QWidget *parent=nullptr)'],['../classschedule.html#af40f31b2bb2e4dfe91477b409b0253fb',1,'schedule::schedule(QString username, QWidget *parent=nullptr)']]],
-  ['sets_1',['sets',['../classsets.html#afd7a5e1e1467c04bacf2716a90bbfa2c',1,'sets']]]
+  ['schedule_0',['schedule',['../class_schedule.html#a7938b8e8acb9b8fac0221b03eadf7325',1,'Schedule::Schedule(QWidget *parent=nullptr)'],['../class_schedule.html#a15ba0bde0f90e389e5827eede5fd5af1',1,'Schedule::Schedule(QString username, QWidget *parent=nullptr)']]],
+  ['sets_1',['Sets',['../class_sets.html#a93fbd4cf48752689d509b23a7e26e729',1,'Sets']]]
 ];
